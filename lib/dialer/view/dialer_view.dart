@@ -53,7 +53,7 @@ class _DialerViewState extends State<DialerView> {
                 print('no valid number');
                 final snackbar =
                     SnackBar(content: Text('Keine gültige Telefonnummer!'));
-                Scaffold.of(context).showSnackBar(snackbar);
+                ScaffoldMessenger.of(context).showSnackBar(snackbar);
               }
             }
 
@@ -89,9 +89,11 @@ class _DialerViewState extends State<DialerView> {
                     Expanded(
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                        child: RaisedButton(
+                        child: ElevatedButton(
                           onPressed: () => _callNumber(),
-                          color: Colors.green,
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.green,
+                          ),
                           child: Icon(
                             Icons.call,
                             color: Colors.white,
