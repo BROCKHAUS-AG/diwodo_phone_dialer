@@ -13,13 +13,13 @@ class DialPad extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
-                    onPressed: () => context.bloc<DialerCubit>().addOne(),
+                    onPressed: () => context.read<DialerCubit>().addOne(),
                     child: Text('1')),
                 ElevatedButton(
-                    onPressed: () => context.bloc<DialerCubit>().addTwo(),
+                    onPressed: () => context.read<DialerCubit>().addTwo(),
                     child: Text('2')),
                 ElevatedButton(
-                    onPressed: () => context.bloc<DialerCubit>().addThree(),
+                    onPressed: () => context.read<DialerCubit>().addThree(),
                     child: Text('3')),
               ],
             ),
@@ -27,13 +27,13 @@ class DialPad extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
-                    onPressed: () => context.bloc<DialerCubit>().addFour(),
+                    onPressed: () => context.read<DialerCubit>().addFour(),
                     child: Text('4')),
                 ElevatedButton(
-                    onPressed: () => context.bloc<DialerCubit>().addFive(),
+                    onPressed: () => context.read<DialerCubit>().addFive(),
                     child: Text('5')),
                 ElevatedButton(
-                    onPressed: () => context.bloc<DialerCubit>().addSix(),
+                    onPressed: () => context.read<DialerCubit>().addSix(),
                     child: Text('6')),
               ],
             ),
@@ -41,13 +41,13 @@ class DialPad extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
-                    onPressed: () => context.bloc<DialerCubit>().addSeven(),
+                    onPressed: () => context.read<DialerCubit>().addSeven(),
                     child: Text('7')),
                 ElevatedButton(
-                    onPressed: () => context.bloc<DialerCubit>().addEight(),
+                    onPressed: () => context.read<DialerCubit>().addEight(),
                     child: Text('8')),
                 ElevatedButton(
-                    onPressed: () => context.bloc<DialerCubit>().addNine(),
+                    onPressed: () => context.read<DialerCubit>().addNine(),
                     child: Text('9')),
               ],
             ),
@@ -55,13 +55,13 @@ class DialPad extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
-                    onPressed: () => context.bloc<DialerCubit>().addPlus(),
+                    onPressed: () => context.read<DialerCubit>().addPlus(),
                     child: Text('+')),
                 ElevatedButton(
-                    onPressed: () => context.bloc<DialerCubit>().addZero(),
+                    onPressed: () => context.read<DialerCubit>().addZero(),
                     child: Text('0')),
                 ElevatedButton(
-                    onPressed: () => context.bloc<DialerCubit>().addHashtag(),
+                    onPressed: () => context.read<DialerCubit>().addHashtag(),
                     child: Text('#')),
               ],
             ),
