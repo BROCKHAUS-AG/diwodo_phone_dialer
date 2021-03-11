@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:live_coding/dialer/cubit/dialer_cubit.dart';
@@ -23,6 +24,7 @@ class DialPad extends StatelessWidget {
                     child: Text('3')),
               ],
             ),
+            SizedBox(height: kIsWeb ? 16 : 0),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -37,6 +39,7 @@ class DialPad extends StatelessWidget {
                     child: Text('6')),
               ],
             ),
+            SizedBox(height: kIsWeb ? 16 : 0),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -51,6 +54,7 @@ class DialPad extends StatelessWidget {
                     child: Text('9')),
               ],
             ),
+            SizedBox(height: kIsWeb ? 16 : 0),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [

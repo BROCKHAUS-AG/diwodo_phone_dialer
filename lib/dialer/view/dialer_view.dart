@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
@@ -84,6 +85,7 @@ class _DialerViewState extends State<DialerView> {
                   ),
                 ),
                 DialPad(),
+                SizedBox(height: kIsWeb ? 16 : 0),
                 Row(
                   children: [
                     Expanded(
