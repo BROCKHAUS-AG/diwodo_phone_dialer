@@ -77,7 +77,7 @@ class _DialerViewState extends State<DialerView> {
                       ),
                       IconButton(
                         onPressed: () =>
-                            context.bloc<DialerCubit>().deleteLastDigit(),
+                            context.read<DialerCubit>().deleteLastDigit(),
                         icon: Icon(Icons.backspace_rounded),
                         color: Colors.red,
                       ),
